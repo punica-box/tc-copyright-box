@@ -5,8 +5,8 @@ import binascii
 from ontology.ont_sdk import OntologySdk
 from ontology.wallet.wallet_manager import WalletManager
 from ontology.smart_contract.neo_contract.abi.abi_info import AbiInfo
-basedir = os.path.abspath(os.path.dirname(__file__))
 
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 class BaseConfig(object):
     """Base configuration."""
