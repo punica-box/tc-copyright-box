@@ -9,4 +9,4 @@ container by issuing command:
 gunicorn --bind my.foo.hostname:12345 bidding_agent.wsgi:app
 """
 
-from project.server import app
+from project.manage import create_app

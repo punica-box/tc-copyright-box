@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Intro{% endblock %}</h1>
+    <a class="action" href="{{ url_for('copyright.create') }}">New</a>
+    <a class="action" href="{{ url_for('copyright.check') }}">Check</a>
+{% endblock %}
+  
+{% block content %}
+
+使用区块链的不可否认性，利用智能合约，解决版权的授权/验证问题。
+
+<p>- 版权物。版权物即版权标的物品，在此合约内，以唯一哈希值的形式存在。</p>
+<p>- 权限。版权物的权限分为两种，使用权和所有权。所有权可以签发使用权，所有权可以进行转让，使用权不可转让。</p>
+<p>- 验证。验证用户U对版权物C的权限，及所有权或使用权或无权限。</p>
+
+{% endblock %}
