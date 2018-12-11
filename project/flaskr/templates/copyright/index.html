@@ -3,6 +3,7 @@
 {% block header %}
   <h1>{% block title %}Intro{% endblock %}</h1>
     <a class="action" href="{{ url_for('copyright.create') }}">New</a>
+    <a class="action" href="{{ url_for('copyright.check') }}">Check</a>
 {% endblock %}
   
 {% block content %}

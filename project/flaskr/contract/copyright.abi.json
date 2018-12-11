@@ -1,0 +1,80 @@
+{
+    "contractHash": "",
+    "abi": {
+        "functions": [{
+                "name": "main",
+                "parameters": [{
+                    "name": "operation",
+                    "type": ""
+                }, {
+                    "name": "args",
+                    "type": ""
+                }],
+                "returntype": ""
+            },
+            {
+                "name": "grant_copyright",
+                "parameters": [{
+                        "name": "copyright",
+                        "type": ""
+                    }, {
+                        "name": "address",
+                        "type": ""
+                    },
+                    {
+                        "name": "expired",
+                        "type": ""
+                    }
+                ],
+                "returntype": ""
+            },
+            {
+                "name": "check_copyright",
+                "parameters": [{
+                    "name": "copyright",
+                    "type": ""
+                },{
+                        "name": "address",
+                        "type": ""
+                    }
+                ],
+                "returntype": ""
+            },
+            {
+                "name": "create_copyright",
+                "parameters": [{
+                    "name": "address",
+                    "type": ""
+                }, {
+                    "name": "copyright",
+                    "type": ""
+                }],
+                "returntype": ""
+            },
+            {
+                "name": "transfer_copyright",
+                "parameters": [{
+                    "name": "copyright",
+                    "type": ""
+                },{
+                        "name": "address",
+                        "type": ""
+                    }
+                ],
+                "returntype": ""
+            },
+            {
+                "name": "buy_copyright",
+                "parameters": [{
+                    "name": "copyright",
+                    "type": ""
+                },{
+                        "name": "address",
+                        "type": ""
+                    }
+                ],
+                "returntype": ""
+            }
+        ]
+    }
+}

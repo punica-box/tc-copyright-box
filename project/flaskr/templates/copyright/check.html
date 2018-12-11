@@ -1,15 +1,13 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Create Copyright{% endblock %}</h1>
+  <h1>{% block title %}Check Copyright owner{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
   <form method="post">
     <label for="ont_id">Ont_id</label>
     <input name="ont_id" id="ont_id" value="{{ request.form['ont_id'] }}" required>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" required>
     <label for="copyright_hash">Copyright_hash</label>
     <textarea name="copyright_hash" id="copyright_hash" required>{{ request.form['copyright_hash'] }}</textarea>
     <input type="submit" value="Save">

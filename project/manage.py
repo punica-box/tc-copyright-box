@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_script import Manager
+from flaskr.config import DevelopmentConfig
 
 
 def create_app(test_config=None):
@@ -14,6 +15,7 @@ def create_app(test_config=None):
         # store the database in the instance folder
         # DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
+    app.config.from_object(DevelopmentConfig)
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
